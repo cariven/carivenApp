@@ -14,18 +14,69 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="8pt">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator Sederhana : Cariven"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/number1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Nilai Pertama (A)"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/number2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Nilai Kedua (B)"
+            android:layout_marginBottom="16dp"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnTambah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Tambah"
+            android:textColor="#FFFFFF"/>
 
-        <ImageView
-            android:id="@+id/imageView2"
+        <Button
+            android:id="@+id/btnKali"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:text="Kali"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bagi"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/txtHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30pt"
+            android:textStyle="bold"
+            android:textColor="#333333"/>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
